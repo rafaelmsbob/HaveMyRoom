@@ -1,0 +1,148 @@
+DROP DATABASE IF EXISTS dbHaveMyRoom;
+CREATE DATABASE IF NOT EXISTS dbHaveMyRoom;
+
+USE dbHaveMyRoom;
+
+DROP TABLE IF EXISTS host_family;
+CREATE TABLE IF NOT EXISTS host_family(
+ host_user varchar(30) NOT NULL PRIMARY KEY
+,host_fname varchar(30)
+,host_lname varchar(30)
+,host_pass varchar(20)
+,host_address varchar(50)
+,host_email varchar(50)
+,host_country varchar(40)
+,host_language varchar(30)
+,host_shared varchar(3)
+,host_bath varchar(3)
+,host_wifi varchar(3)
+,host_time varchar(3)
+);
+   
+insert into host_family (host_user, host_fname, host_lname, host_pass, host_email, host_address, host_country, host_language, host_shared, host_bath, host_wifi, host_time) values ('Kassie', 'Kassie', 'Mc Mechan', 'Kassie', 'kmcmechan0@java.com', '5 Sutherland Drive', 'Serbia', 'Malay', 'yes', 'no', 'no', 'yes');
+insert into host_family (host_user, host_fname, host_lname, host_pass, host_email, host_address, host_country, host_language, host_shared, host_bath, host_wifi, host_time) values ('Teena', 'Teena', 'Hindrich', 'Teena', 'thindrich1@apache.org', '34991 Rutledge Parkway', 'Sweden', 'Kurdish', 'yes', 'yes', 'no', 'no');
+insert into host_family (host_user, host_fname, host_lname, host_pass, host_email, host_address, host_country, host_language, host_shared, host_bath, host_wifi, host_time) values ('Leanora', 'Leanora', 'Cothey', 'Leanora', 'lcothey2@squidoo.com', '18 Raven Trail', 'Portugal', 'Greek', 'yes', 'no', 'no', 'yes');
+insert into host_family (host_user, host_fname, host_lname, host_pass, host_email, host_address, host_country, host_language, host_shared, host_bath, host_wifi, host_time) values ('Alfred', 'Alfred', 'Muirhead', 'Alfred', 'amuirhead3@quantcast.com', '55 Dahle Point', 'Argentina', 'Northern Sotho', 'yes', 'no', 'no', 'no');
+insert into host_family (host_user, host_fname, host_lname, host_pass, host_email, host_address, host_country, host_language, host_shared, host_bath, host_wifi, host_time) values ('Bobbie', 'Bobbie', 'Simonsson', 'Bobbie', 'bsimonsson4@arizona.edu', '2 Oxford Trail', 'Belarus', 'Marathi', 'no', 'yes', 'yes', 'no');
+insert into host_family (host_user, host_fname, host_lname, host_pass, host_email, host_address, host_country, host_language, host_shared, host_bath, host_wifi, host_time) values ('Alida', 'Alida', 'Jagiello', 'Alida', 'ajagiello5@chron.com', '42 Beilfuss Way', 'China', 'Assamese', 'no', 'no', 'no', 'no');
+insert into host_family (host_user, host_fname, host_lname, host_pass, host_email, host_address, host_country, host_language, host_shared, host_bath, host_wifi, host_time) values ('Carree', 'Carree', 'Puddan', 'Carree', 'cpuddan6@clickbank.net', '213 Lindbergh Parkway', 'France', 'Swedish', 'yes', 'yes', 'no', 'yes');
+insert into host_family (host_user, host_fname, host_lname, host_pass, host_email, host_address, host_country, host_language, host_shared, host_bath, host_wifi, host_time) values ('Cornelia', 'Cornelia', 'Runge', 'Cornelia', 'crunge7@seesaa.net', '20472 Chive Way', 'Vietnam', 'Hindi', 'yes', 'yes', 'no', 'no');
+insert into host_family (host_user, host_fname, host_lname, host_pass, host_email, host_address, host_country, host_language, host_shared, host_bath, host_wifi, host_time) values ('Perle', 'Perle', 'Burdfield', 'Perle', 'pburdfield8@accuweather.com', '8756 Boyd Crossing', 'China', 'Sotho', 'no', 'yes', 'yes', 'no');
+insert into host_family (host_user, host_fname, host_lname, host_pass, host_email, host_address, host_country, host_language, host_shared, host_bath, host_wifi, host_time) values ('Clovis', 'Clovis', 'Carl', 'Clovis', 'ccarl9@wp.com', '493 Del Mar Parkway', 'Indonesia', 'Norwegian', 'no', 'yes', 'no', 'yes');
+insert into host_family (host_user, host_fname, host_lname, host_pass, host_email, host_address, host_country, host_language, host_shared, host_bath, host_wifi, host_time) values ('Byram', 'Byram', 'Leyninye', 'Byram', 'bleyninyea@unc.edu', '2 Macpherson Junction', 'Isle of Man', 'Gagauz', 'yes', 'yes', 'yes', 'yes');
+insert into host_family (host_user, host_fname, host_lname, host_pass, host_email, host_address, host_country, host_language, host_shared, host_bath, host_wifi, host_time) values ('Fonz', 'Fonz', 'Pawelke', 'Fonz', 'fpawelkeb@phpbb.com', '0 Kensington Lane', 'Indonesia', 'Pashto', 'no', 'yes', 'no', 'no');
+insert into host_family (host_user, host_fname, host_lname, host_pass, host_email, host_address, host_country, host_language, host_shared, host_bath, host_wifi, host_time) values ('Nickolai', 'Nickolai', 'Saunton', 'Nickolai', 'nsauntonc@github.com', '3803 Lyons Street', 'Portugal', 'Lao', 'no', 'yes', 'yes', 'no');
+insert into host_family (host_user, host_fname, host_lname, host_pass, host_email, host_address, host_country, host_language, host_shared, host_bath, host_wifi, host_time) values ('Odie', 'Odie', 'Danaher', 'Odie', 'odanaherd@parallels.com', '1 Michigan Drive', 'Portugal', 'Moldovan', 'yes', 'no', 'yes', 'no');
+insert into host_family (host_user, host_fname, host_lname, host_pass, host_email, host_address, host_country, host_language, host_shared, host_bath, host_wifi, host_time) values ('Sax', 'Sax', 'Zouch', 'Sax', 'szouche@booking.com', '50 Wayridge Place', 'Palestinian Territory', 'Swahili', 'yes', 'yes', 'no', 'yes');
+insert into host_family (host_user, host_fname, host_lname, host_pass, host_email, host_address, host_country, host_language, host_shared, host_bath, host_wifi, host_time) values ('Marget', 'Marget', 'Dran', 'Marget', 'mdranf@ning.com', '87 Anniversary Place', 'Philippines', 'Arabic', 'no', 'no', 'yes', 'no');
+insert into host_family (host_user, host_fname, host_lname, host_pass, host_email, host_address, host_country, host_language, host_shared, host_bath, host_wifi, host_time) values ('Heath', 'Heath', 'Arpino', 'Heath', 'harpinog@soup.io', '50521 Ridgeway Pass', 'Russia', 'Catalan', 'no', 'no', 'yes', 'no');
+insert into host_family (host_user, host_fname, host_lname, host_pass, host_email, host_address, host_country, host_language, host_shared, host_bath, host_wifi, host_time) values ('Alberik', 'Alberik', 'Piggens', 'Alberik', 'apiggensh@apache.org', '0 Marquette Park', 'Brazil', 'Swati', 'yes', 'yes', 'no', 'yes');
+insert into host_family (host_user, host_fname, host_lname, host_pass, host_email, host_address, host_country, host_language, host_shared, host_bath, host_wifi, host_time) values ('Lyndsie', 'Lyndsie', 'Yushin', 'Lyndsie', 'lyushini@scribd.com', '62 Briar Crest Road', 'Poland', 'Chinese', 'yes', 'yes', 'no', 'yes');
+insert into host_family (host_user, host_fname, host_lname, host_pass, host_email, host_address, host_country, host_language, host_shared, host_bath, host_wifi, host_time) values ('Tadd', 'Tadd', 'Connue', 'Tadd', 'tconnuej@theglobeandmail.com', '811 Lyons Place', 'Indonesia', 'Gujarati', 'no', 'yes', 'yes', 'no');
+
+DROP TABLE IF EXISTS guest;
+CREATE TABLE IF NOT EXISTS guest(
+	guest_user varchar(30) NOT NULL PRIMARY KEY,
+	guest_fname VARCHAR(50),
+	guest_pass varchar(30),
+	guest_lname VARCHAR(50),
+	guest_email VARCHAR(50),
+	guest_country VARCHAR(50),
+	guest_age INT
+);
+insert into guest (guest_user, guest_fname, guest_lname, guest_pass, guest_email, guest_country, guest_age) values ('Clark', 'Clark', 'Elcom', 'Clark', 'celcom0@ycombinator.com', 'Guatemala', 62);
+insert into guest (guest_user, guest_fname, guest_lname, guest_pass, guest_email, guest_country, guest_age) values ('Evvy', 'Evvy', 'Matyukon', 'Evvy', 'ematyukon1@merriam-webster.com', 'China', 57);
+insert into guest (guest_user, guest_fname, guest_lname, guest_pass, guest_email, guest_country, guest_age) values ('Corella', 'Corella', 'Gammack', 'Corella', 'cgammack2@discuz.net', 'Sweden', 32);
+insert into guest (guest_user, guest_fname, guest_lname, guest_pass, guest_email, guest_country, guest_age) values ('Mel', 'Mel', 'Milmo', 'Mel', 'mmilmo3@noaa.gov', 'Republic of the Congo', 69);
+insert into guest (guest_user, guest_fname, guest_lname, guest_pass, guest_email, guest_country, guest_age) values ('Marcia', 'Marcia', 'Pattingson', 'Marcia', 'mpattingson4@businessinsider.com', 'Brazil', 72);
+insert into guest (guest_user, guest_fname, guest_lname, guest_pass, guest_email, guest_country, guest_age) values ('Perry', 'Perry', 'Ramsby', 'Perry', 'pramsby5@narod.ru', 'Mexico', 20);
+insert into guest (guest_user, guest_fname, guest_lname, guest_pass, guest_email, guest_country, guest_age) values ('Kelley', 'Kelley', 'Emptage', 'Kelley', 'kemptage6@aol.com', 'Belarus', 46);
+insert into guest (guest_user, guest_fname, guest_lname, guest_pass, guest_email, guest_country, guest_age) values ('Lyndsie', 'Lyndsie', 'Waycott', 'Lyndsie', 'lwaycott7@yolasite.com', 'China', 95);
+insert into guest (guest_user, guest_fname, guest_lname, guest_pass, guest_email, guest_country, guest_age) values ('Loella', 'Loella', 'Abrahami', 'Loella', 'labrahami8@sciencedirect.com', 'Cameroon', 18);
+insert into guest (guest_user, guest_fname, guest_lname, guest_pass, guest_email, guest_country, guest_age) values ('Dedra', 'Dedra', 'Olphert', 'Dedra', 'dolphert9@symantec.com', 'Philippines', 62);
+insert into guest (guest_user, guest_fname, guest_lname, guest_pass, guest_email, guest_country, guest_age) values ('Deni', 'Deni', 'Stefi', 'Deni', 'dstefia@mozilla.org', 'United States', 95);
+insert into guest (guest_user, guest_fname, guest_lname, guest_pass, guest_email, guest_country, guest_age) values ('Deena', 'Deena', 'Noriega', 'Deena', 'dnoriegab@linkedin.com', 'China', 64);
+insert into guest (guest_user, guest_fname, guest_lname, guest_pass, guest_email, guest_country, guest_age) values ('Corry', 'Corry', 'Spellicy', 'Corry', 'cspellicyc@csmonitor.com', 'China', 58);
+insert into guest (guest_user, guest_fname, guest_lname, guest_pass, guest_email, guest_country, guest_age) values ('Angelika', 'Angelika', 'Decort', 'Angelika', 'adecortd@yahoo.co.jp', 'Poland', 25);
+insert into guest (guest_user, guest_fname, guest_lname, guest_pass, guest_email, guest_country, guest_age) values ('Lissy', 'Lissy', 'Dorrell', 'Lissy', 'ldorrelle@cnn.com', 'Sri Lanka', 56);
+insert into guest (guest_user, guest_fname, guest_lname, guest_pass, guest_email, guest_country, guest_age) values ('Lynn', 'Lynn', 'Gaitskill', 'Lynn', 'lgaitskillf@wunderground.com', 'Dominica', 77);
+insert into guest (guest_user, guest_fname, guest_lname, guest_pass, guest_email, guest_country, guest_age) values ('Stu', 'Stu', 'Consadine', 'Stu', 'sconsadineg@csmonitor.com', 'China', 18);
+insert into guest (guest_user, guest_fname, guest_lname, guest_pass, guest_email, guest_country, guest_age) values ('Fleurette', 'Fleurette', 'Mathieson', 'Fleurette', 'fmathiesonh@google.com.br', 'Russia', 66);
+insert into guest (guest_user, guest_fname, guest_lname, guest_pass, guest_email, guest_country, guest_age) values ('Kaitlin', 'Kaitlin', 'Meeks', 'Kaitlin', 'kmeeksi@flavors.me', 'Philippines', 81);
+insert into guest (guest_user, guest_fname, guest_lname, guest_pass, guest_email, guest_country, guest_age) values ('Weidar', 'Weidar', 'Legan', 'Weidar', 'wleganj@icio.us', 'China', 77);
+
+DROP TABLE IF EXISTS message;
+CREATE TABLE IF NOT EXISTS message(
+    msg_ID INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	host_user VARCHAR(30) NOT NULL REFERENCES host_family,
+	guest_user VARCHAR(30) NOT NULL REFERENCES guest,
+	msg_content varchar(200),
+	msg_dirGtoH boolean
+);
+insert into message (host_user, guest_user, msg_content, msg_dirGtoH) values ('Kassie','Clark', "what'p, bro!", true);
+insert into message (host_user, guest_user, msg_content, msg_dirGtoH) values ('Teena', 'Clark', "what'p, bro!", true);
+insert into message (host_user, guest_user, msg_content, msg_dirGtoH) values ('Teena', 'Clark', "what'p, bro!", true);
+insert into message (host_user, guest_user, msg_content, msg_dirGtoH) values ('Kassie', 'Clark', "no'much, bro!", false);
+insert into message (host_user, guest_user, msg_content, msg_dirGtoH) values ('Kassie', 'Evvy', "Hey!", true);
+insert into message (host_user, guest_user, msg_content, msg_dirGtoH) values ('Kassie', 'Evvy', "Ho!", false);
+insert into message (host_user, guest_user, msg_content, msg_dirGtoH) values ('Kassie', 'Evvy', "Lets go!", true);
+
+DROP TABLE IF EXISTS host_img;
+CREATE TABLE IF NOT EXISTS host_img(
+	host_user VARCHAR(30) NOT NULL REFERENCES host_family,
+	img_name varchar(30) NOT NULL,
+	PRIMARY KEY (host_user, img_name)
+);
+insert into host_img (host_user, img_name) values ('Kassie', 'img1.png');
+insert into host_img (host_user, img_name) values ('Kassie', 'img2.png');
+insert into host_img (host_user, img_name) values ('Kassie', 'img3.png');
+insert into host_img (host_user, img_name) values ('Teena', 'img4.png');
+insert into host_img (host_user, img_name) values ('Teena', 'img5.png');
+insert into host_img (host_user, img_name) values ('Teena', 'img6.png');
+insert into host_img (host_user, img_name) values ('Leanora', 'img7.png');
+insert into host_img (host_user, img_name) values ('Leanora', 'img8.png');
+insert into host_img (host_user, img_name) values ('Alfred', 'img9.png');
+insert into host_img (host_user, img_name) values ('Alfred', 'img10.png');
+insert into host_img (host_user, img_name) values ('Bobbie', 'img2.png');
+insert into host_img (host_user, img_name) values ('Bobbie', 'img3.png');
+insert into host_img (host_user, img_name) values ('Bobbie', 'img11.png');
+insert into host_img (host_user, img_name) values ('Alida', 'img8.png');
+insert into host_img (host_user, img_name) values ('Alida', 'img11.png');
+insert into host_img (host_user, img_name) values ('Carree', 'img5.png');
+insert into host_img (host_user, img_name) values ('Carree', 'img6.png');
+insert into host_img (host_user, img_name) values ('Cornelia', 'img10.png');
+insert into host_img (host_user, img_name) values ('Cornelia', 'img11.png');
+insert into host_img (host_user, img_name) values ('Perle', 'img1.png');
+insert into host_img (host_user, img_name) values ('Perle', 'img2.png');
+insert into host_img (host_user, img_name) values ('Perle', 'img5.png');
+insert into host_img (host_user, img_name) values ('Perle', 'img6.png');
+insert into host_img (host_user, img_name) values ('Clovis', 'img6.png');
+insert into host_img (host_user, img_name) values ('Clovis', 'img5.png');
+insert into host_img (host_user, img_name) values ('Clovis', 'img11.png');
+insert into host_img (host_user, img_name) values ('Byram', 'img5.png');
+insert into host_img (host_user, img_name) values ('Byram', 'img6.png');
+insert into host_img (host_user, img_name) values ('Byram', 'img11.png');
+insert into host_img (host_user, img_name) values ('Fonz', 'img10.png');
+insert into host_img (host_user, img_name) values ('Fonz', 'img11.png');
+insert into host_img (host_user, img_name) values ('Nickolai', 'img8.png');
+insert into host_img (host_user, img_name) values ('Nickolai', 'img2.png');
+insert into host_img (host_user, img_name) values ('Odie', 'img2.png');
+insert into host_img (host_user, img_name) values ('Odie', 'img1.png');
+insert into host_img (host_user, img_name) values ('Sax', 'img4.png');
+insert into host_img (host_user, img_name) values ('Sax', 'img5.png');
+insert into host_img (host_user, img_name) values ('Sax', 'img10.png');
+insert into host_img (host_user, img_name) values ('Marget', 'img2.png');
+insert into host_img (host_user, img_name) values ('Marget', 'img3.png');
+insert into host_img (host_user, img_name) values ('Marget', 'img4.png');
+insert into host_img (host_user, img_name) values ('Marget', 'img5.png');
+insert into host_img (host_user, img_name) values ('Heath', 'img5.png');
+insert into host_img (host_user, img_name) values ('Heath', 'img4.png');
+insert into host_img (host_user, img_name) values ('Heath', 'img8.png');
+insert into host_img (host_user, img_name) values ('Alberik', 'img2.png');
+insert into host_img (host_user, img_name) values ('Alberik', 'img11.png');
+insert into host_img (host_user, img_name) values ('Alberik', 'img1.png');
+insert into host_img (host_user, img_name) values ('Lyndsie', 'img5.png');
+insert into host_img (host_user, img_name) values ('Lyndsie', 'img8.png');
+insert into host_img (host_user, img_name) values ('Tadd', 'img2.png');
+insert into host_img (host_user, img_name) values ('Tadd', 'img5.png');
+insert into host_img (host_user, img_name) values ('Tadd', 'img3.png');

@@ -1,0 +1,146 @@
+#banner
+{
+	background-image: url('Images/Banner.jpg');
+	align-self: center;	
+	height: 200px;
+	background-repeat: no-repeat;
+	background-position: center top;
+	width: 100%;
+}
+
+#links
+{	
+	margin-left: 590px;
+	font-size: 15pt;
+	width: 100%;	
+}
+a
+{
+	margin: 0px 15px 0px 15px;
+}
+
+#searchBar
+{
+	position: relative;
+	float: left;
+	padding: 20px 20px 20px 150px;
+	width: 600px;
+}
+
+#imgObj
+{
+	position: relative;
+	float: left;
+	top: 15px;
+}
+
+#caption
+{
+	text-align: center;
+	
+	top: 0px;
+	right: 0px;
+	font-size: 20pt;
+	font-weight: bold;
+}
+
+#tableObj
+{
+	float: left;
+	margin-top:20px;	
+}
+
+#tableLogIn
+{
+	text-align: center;
+	
+}
+
+#chatBody
+{
+	background-image: url('Images/ChatBackground.jpg');
+	background-size: 100% 100%;
+}
+
+div.chatLeft
+{
+	float: left;
+	width: 159px;
+	height: 200px;
+	text-align: center;	
+	font-weight: bold;
+	margin-top: 100px;
+	padding-right: 15px;
+}
+
+div.chatTitle
+{
+	font-size: 16pt;
+	width: 349px;
+	float: left;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+
+
+div.chatMsg 
+{
+    background-color: lightblue;
+    width: 349px;
+    height: 230px;
+    overflow: auto;
+    align-content: center;
+    float: left;
+    border-radius: 10%;
+    padding: 15px;
+}
+
+div.chatTxtArea
+{
+	float: left;
+	text-align: center;
+	width: 349px;
+	height: auto;
+	/*padding: 15px;*/
+	font-size: 14pt;
+	font-weight: bold;
+}
+
+div.chatRight
+{
+	float: left;
+	width: 159px;
+	height: 200px;
+	text-align: center;	
+	font-weight: bold;
+	margin-top: -200px;
+	margin-left: 10px;
+}
+
+
+.bod
+{
+	position: absolute;
+	z-index: 1;
+}
+
+.dark
+{
+	position: relative;
+	z-index: 2;
+	top: 400px;
+}
+
+body
+{
+	background-color: #b5e61d;
+	/*position: absolute;*/
+}
+
+em
+{
+	font-weight: bold;
+	font-size: 25pt;
+}
