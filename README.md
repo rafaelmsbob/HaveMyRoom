@@ -1,5 +1,5 @@
 # HaveMyRoom
-Web Application where Guests meets Hosts!
+Web Application where Guests meet Hosts!
 
 Web application for academic purposes.
 
